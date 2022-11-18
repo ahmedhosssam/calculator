@@ -38,7 +38,7 @@ const dividing = (a, b) => {
 
 const dic = {
   modulus: '%',
-  divide: '/',
+  divide: '÷',
   seven: 7,
   eight: 8,
   nine: 9,
@@ -59,12 +59,15 @@ const populateResult = (action) => {
   actionInNum = dic[action.target.id];
   if (result.textContent == 0) {
     result.textContent = actionInNum;
+  } else if (actionInNum === '+' && result.textContent.includes('+')) {
+    return;
   } else {
     result.textContent += actionInNum;
   }
 };
 
-const operate = (operator, a, b) => {};
+let firstNum = 0;
+const operate = (a) => {};
 
 modulus.addEventListener('click', populateResult);
 divide.addEventListener('click', populateResult);

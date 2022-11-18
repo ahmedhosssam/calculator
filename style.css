@@ -13,6 +13,7 @@ body {
 }
 
 .calculator {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -25,6 +26,7 @@ body {
 .row {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .result {
@@ -35,10 +37,12 @@ body {
 }
 
 .operations {
+  position: absolute;
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 0px 15px;
+  bottom: 20px;
 }
 
 .grey-sign,
