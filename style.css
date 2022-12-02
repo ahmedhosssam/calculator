@@ -29,6 +29,13 @@ body {
   gap: 10px;
 }
 
+.sub-result {
+  position: absolute;
+  right: 0;
+  margin-right: 35px;
+  margin-top: 30px;
+}
+
 .result {
   display: flex;
   justify-content: flex-end;
@@ -47,7 +54,8 @@ body {
 
 .grey-sign,
 .operator,
-.number {
+.number,
+.equals {
   display: flex;
   align-items: center;
   justify-content: center;
